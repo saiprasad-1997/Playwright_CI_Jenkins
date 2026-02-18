@@ -9,6 +9,7 @@ test('auth test', async({page})=>{
     page.setExtraHTTPHeaders({Authorization : authHeader});
 
     await page.goto('https://the-internet.herokuapp.com/basic_auth');
+    console.log("Auth test completed successfully!");
 
     // await new Promise(() => {}); // prevents script from exiting!
 
