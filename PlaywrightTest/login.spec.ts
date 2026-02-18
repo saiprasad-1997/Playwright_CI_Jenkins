@@ -16,5 +16,6 @@ test('login test', async({page})=>{
     console.log("Login page title: ", title);
     await page.screenshot({path: 'loginpage.png'});
     expect(title).toEqual('Account Login');
+    console.log("Login test completed successfully!");
 
 } );
